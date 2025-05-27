@@ -40,7 +40,7 @@ function Login() {
         const {success, message, jwtToken, name, email, error} = result;
         if(success){
           handleSuccess(message);
-          localStorage.setItem('toekn', jwtToken);
+          localStorage.setItem('token', jwtToken);
           localStorage.setItem('loggedInUser', name);
           localStorage.setItem('loggedInEmail', email); 
           setTimeout( ()=>{
