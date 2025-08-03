@@ -28,7 +28,7 @@ function Login() {
         return handleError('All fileds are required!')
       }
       try {
-        const url = 'http://localhost:8080/auth/login';
+        const url = 'https://login-signup-auth-project-214.vercel.app/auth/login';
         const response = await fetch(url, {
           method: 'POST',
           headers:{
@@ -111,3 +111,4 @@ function Login() {
 }
 
 export default Login
+
