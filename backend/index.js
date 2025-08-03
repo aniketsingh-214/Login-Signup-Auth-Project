@@ -9,6 +9,11 @@ require('./Models/db');
 
 const PORT = process.env.PORT || 8080;
 
+app.get("/", (req, res) => {
+  res.send("Backend API is live on Vercel!");
+});
+
+
 app.get('/result', (req, res) => {
     res.send("Hello");
 });
@@ -19,4 +24,5 @@ app.use('/auth',AuthRouter)
 
 app.listen(PORT, () => {
     console.log(`server is running on ${PORT}`)
+
 })
